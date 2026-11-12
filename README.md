@@ -58,5 +58,6 @@ title: 講演タイトル
 description: 一覧ページに表示する短い説明
 date: 2026-11-12 # 講演日（YYYY-MM-DD）。新しい順の並べ替えに使います
 event: "Example Conf #1" # イベント名。「#」を含む場合は引用符で囲んでください
+hideInList: true # 一覧ページから外す。スライドのURL自体は有効なままです
 ---
 ```

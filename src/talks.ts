@@ -71,6 +71,11 @@ export function readText(value: unknown): string | undefined {
   return text === "" ? undefined : text;
 }
 
+/** True when frontmatter `hideInList` is the boolean `true`. */
+export function isHiddenInList(value: unknown): boolean {
+  return value === true;
+}
+
 /** Builds the GitHub URL of a deck's Markdown from `deck.source`. */
 export function toSourceUrl(source: string): string {
   const path = source.replaceAll("\\", "/").replace(/^\.?\/+/, "");
@@ -107,5 +112,8 @@ export function compareTalks(a: Talk, b: Talk): number {
 }
 
 export function toTalks(decks: readonly PresenitDeck[]): Talk[] {
-  return decks.map(toTalk).sort(compareTalks);
+  return decks
+    .filter((deck) => !isHiddenInList(deck.frontmatter.hideInList))
+    .map(toTalk)
+    .sort(compareTalks);
 }

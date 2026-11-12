@@ -1,6 +1,6 @@
 import type { PresenitDeck } from "@ayaexptech/presen-it/decks";
 import { describe, expect, test } from "vite-plus/test";
-import { parseTalkDate, readText, toSourceUrl, toTalks } from "./talks.ts";
+import { isHiddenInList, parseTalkDate, readText, toSourceUrl, toTalks } from "./talks.ts";
 
 function deck(overrides: Partial<PresenitDeck> & Pick<PresenitDeck, "route">): PresenitDeck {
   return {
@@ -82,4 +82,20 @@ test("toTalks sorts newest first and keeps undated talks last in path order", ()
 
 test("toTalks handles zero decks", () => {
   expect(toTalks([])).toEqual([]);
+});
+
+test("isHiddenInList accepts only the boolean true", () => {
+  expect(isHiddenInList(true)).toBe(true);
+  expect(isHiddenInList(false)).toBe(false);
+  expect(isHiddenInList("true")).toBe(false);
+  expect(isHiddenInList(undefined)).toBe(false);
+});
+
+test("toTalks omits decks with hideInList: true", () => {
+  const talks = toTalks([
+    deck({ route: "/slides/visible/" }),
+    deck({ route: "/slides/hidden/", frontmatter: { hideInList: true, date: "2026-11-12" } }),
+    deck({ route: "/slides/shown/", frontmatter: { hideInList: false } }),
+  ]);
+  expect(talks.map((talk) => talk.key)).toEqual(["/slides/visible/", "/slides/shown/"]);
 });
