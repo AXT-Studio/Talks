@@ -1,0 +1,23 @@
+{
+  "name": "axt-studio-talks",
+  "version": "0.0.0",
+  "private": true,
+  "description": "AXT-Studio tech talk slides archive built with Vite+ and AXT Presen'it!",
+  "type": "module",
+  "scripts": {
+    "prepare": "vp config"
+  },
+  "devDependencies": {
+    "@ayaexptech/presen-it": "jsr:^2.0.0",
+    "typescript": "~7.0.2",
+    "vite": "catalog:",
+    "vite-plus": "catalog:"
+  },
+  "devEngines": {
+    "packageManager": {
+      "name": "pnpm",
+      "version": "12.18.0",
+      "onFail": "download"
+    }
+  }
+}
