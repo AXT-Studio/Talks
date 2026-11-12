@@ -32,7 +32,11 @@ jobs:
 
       - run: vp check
       - run: vp test
+      # Presen'it! looks at /usr/bin/chromium before Chrome. The runner's
+      # Chromium cannot start its sandbox, so point OGP capture at Google Chrome.
       - run: vp build
+        env:
+          CHROME_PATH: /usr/bin/google-chrome
 
       - uses: actions/upload-pages-artifact@v5
         with:
