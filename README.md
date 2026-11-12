@@ -1,6 +1,6 @@
 # AXT-Studio Talks
 
-AXT-Studioの技術系講演スライドの公開アーカイブです。
+綾坂ことによるプレゼン・セッション・講演などのスライドアーカイブです。
 
 **スライド一覧：<https://axt-studio.github.io/Talks/>**
 
