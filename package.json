@@ -8,7 +8,7 @@
     "prepare": "vp config"
   },
   "devDependencies": {
-    "@ayaexptech/presen-it": "jsr:^2.1.0",
+    "@ayaexptech/presen-it": "jsr:^2.1.1",
     "typescript": "~7.0.2",
     "vite": "catalog:",
     "vite-plus": "catalog:"

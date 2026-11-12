@@ -179,8 +179,8 @@ importers:
   .:
     devDependencies:
       '@ayaexptech/presen-it':
-        specifier: jsr:^2.1.0
-        version: '@jsr/ayaexptech__presen-it@2.1.0(typescript@7.0.2)'
+        specifier: jsr:^2.1.1
+        version: '@jsr/ayaexptech__presen-it@2.1.1(typescript@7.0.2)'
       typescript:
         specifier: ~7.0.2
         version: 7.0.2
@@ -218,8 +218,8 @@ packages:
   '@jridgewell/trace-mapping@0.3.31':
     resolution: {integrity: sha512-zzNR+SdQSDJzc8joaeP8QQoCQr8NuYx2dIIytl1QeBEZHJ9uW6hebsrYgbz8hJwUQao3TWCMtmfV8Nu1twOLAw==}
 
-  '@jsr/ayaexptech__presen-it@2.1.0':
-    resolution: {integrity: sha512-XBBSDsVJGSbU1CvLvn6PXW8uAuqSs3wk05TCJYp0etuEVXsr1tRYqqeKcUWIzpmzoUQWbKihgS280nJ3fUF+UQ==, tarball: https://npm.jsr.io/~/11/@jsr/ayaexptech__presen-it/2.1.0.tgz}
+  '@jsr/ayaexptech__presen-it@2.1.1':
+    resolution: {integrity: sha512-B3cRv4G79e6JyBOaVocTJ3xJ7DXqEfL0go7490R5hTqTV6CByBuRNn30MgjKmUy3omLsDGc/6TfKEk9N/LXQdw==, tarball: https://npm.jsr.io/~/11/@jsr/ayaexptech__presen-it/2.1.1.tgz}
 
   '@oxc-project/runtime@0.158.0':
     resolution: {integrity: sha512-OYWBlK/wnZHyol5jkvBJadD8KTR6DJfFDRClqrU6kBDQKHd4bXNZALg3qfXk0aFl6F5loSxMT24EZurNWE4MKQ==}
@@ -1698,7 +1698,7 @@ snapshots:
       '@jridgewell/resolve-uri': 3.1.2
       '@jridgewell/sourcemap-codec': 1.6.0
 
-  '@jsr/ayaexptech__presen-it@2.1.0(typescript@7.0.2)':
+  '@jsr/ayaexptech__presen-it@2.1.1(typescript@7.0.2)':
     dependencies:
       beautiful-mermaid: 1.1.3
       hast-util-to-html: 9.0.6

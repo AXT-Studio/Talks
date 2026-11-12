@@ -2,7 +2,7 @@ catalog:
   vite: npm:@voidzero-dev/vite-plus-core@1.6.0
   vite-plus: 1.6.0
 minimumReleaseAgeExclude:
-  - "@jsr/ayaexptech__presen-it@2.1.0"
+  - "@jsr/ayaexptech__presen-it@2.1.1"
 overrides:
   vite@*: "catalog:"
 peerDependencyRules:
